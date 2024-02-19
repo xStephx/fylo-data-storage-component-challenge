@@ -167,12 +167,12 @@ body{
     transform: rotate(-90deg);
 }
 
-.info-part h2{
-    font-size: 32px;
+.info-part h1{
+    font-size: 35px;
     font-weight: var(--font-wght-700);
 }
 
-.info-part h3{
+.info-part h2{
     margin-top: 5px;
     margin-left: 5px;
     color: var(--Grayish-Blue);
