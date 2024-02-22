@@ -9,6 +9,8 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
 
 ![](./assets/images/screenshot.PNG)
 
+You can check it out live [here](https://xstephx.github.io/fylo-data-storage-component-challenge/).
+
 ## My process
 
 ### Built with
