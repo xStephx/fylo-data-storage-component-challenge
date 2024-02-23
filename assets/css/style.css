@@ -1,16 +1,19 @@
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
-:root{
+/* Global Variables */
+:root {
     /* Colors */
 
     /* Primary */
-    --Gradient: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));;
+    --Gradient: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    ;
 
     /* Neutral */
     --Pale-Blue: hsl(243, 100%, 93%);
@@ -25,7 +28,7 @@
     --Font-size: 14px;
 }
 
-body{
+body {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -35,9 +38,10 @@ body{
     background-repeat: no-repeat;
     background-size: 100% 50vh;
     background-position: bottom;
-    font-family: var(--font-family); 
+    font-family: var(--font-family);
 }
 
+/* Main Container */
 .container {
     max-width: 1200px;
     display: flex;
@@ -45,7 +49,8 @@ body{
     align-items: end;
 }
 
-.first-section{
+/* First Section */
+.first-section {
     border-top-left-radius: 10px;
     border-top-right-radius: 85px;
     border-bottom-left-radius: 10px;
@@ -56,7 +61,7 @@ body{
     padding: 40px;
 }
 
-.logo{
+.logo {
     margin-bottom: 40px;
 }
 
@@ -84,36 +89,40 @@ body{
     max-width: 100%;
     max-height: 100%;
 }
-.second-section{
+
+/* Second Section */
+.second-section {
     position: relative;
 }
-.storage{
+
+.storage {
     max-width: 550px;
     background-color: var(--Dark-Blue);
     border-radius: 10px;
     padding: 35px;
 }
 
-.storage p{
+.storage p {
     font-size: 15px;
-    color: var(--Grayish-Blue);  
-    font-weight: var(--font-wght-400); 
+    color: var(--Grayish-Blue);
+    font-weight: var(--font-wght-400);
     margin-bottom: 20px;
 }
 
-.storage span{
+.storage span {
     color: var(--Pale-Blue);
     font-weight: var(--font-wght-700);
 }
 
-.bar{
+.bar {
     width: 450px;
     height: 15px;
     border-radius: 15px;
     background-color: var(--Very-Dark-Blue);
     margin-bottom: 10px;
 }
-.active-bar{
+
+.active-bar {
     width: 74.8%;
     height: 100%;
     display: flex;
@@ -123,7 +132,7 @@ body{
     background-image: var(--Gradient)
 }
 
-.dot{
+.dot {
     width: 10px;
     height: 10px;
     margin-right: 2px;
@@ -132,18 +141,19 @@ body{
     background-color: white;
 }
 
-.min-max{
+.min-max {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.min-max p{
+
+.min-max p {
     font-size: 13px;
     color: var(--Pale-Blue);
     font-weight: var(--font-wght-400);
 }
 
-.info-part{
+.info-part {
     position: absolute;
     top: -50px;
     right: 30px;
@@ -155,7 +165,8 @@ body{
     border-radius: 10px 10px 0 10px;
     background-color: white;
 }
-.triangle{
+
+.triangle {
     position: absolute;
     top: 57.5px;
     right: -12px;
@@ -167,12 +178,12 @@ body{
     transform: rotate(-90deg);
 }
 
-.info-part h1{
+.info-part h1 {
     font-size: 35px;
     font-weight: var(--font-wght-700);
 }
 
-.info-part h2{
+.info-part h2 {
     margin-top: 5px;
     margin-left: 5px;
     color: var(--Grayish-Blue);
@@ -181,48 +192,55 @@ body{
     text-transform: uppercase;
 }
 
-@media(max-width: 950px){
-    body{
+/* Responsive */
+@media(max-width: 950px) {
+    body {
         background-image: url('../images/bg-mobile.png');
         background-repeat: no-repeat;
         background-size: 100% 100vh;
         background-position: cover;
 
     }
-    .container{
+
+    .container {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .first-section{
+
+    .first-section {
         max-width: 320px;
         margin-bottom: 20px;
         margin-right: 0;
     }
-    .storage{
+
+    .storage {
         max-width: 350px;
         background-color: var(--Dark-Blue);
         border-radius: 10px;
         padding: 35px;
-    } 
-    .storage span{
+    }
+
+    .storage span {
         color: var(--Pale-Blue);
         font-weight: var(--font-wght-700);
     }
-    .bar{
+
+    .bar {
         width: 250px;
         height: 15px;
         border-radius: 15px;
         background-color: var(--Very-Dark-Blue);
         margin-bottom: 10px;
     }
-    .info-part{
+
+    .info-part {
         left: 60px;
         top: 120px;
         border-radius: 10px 10px 10px 10px;
     }
-    .triangle{
+
+    .triangle {
         display: none;
     }
 }
-
